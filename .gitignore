@@ -1,7 +1,2 @@
+_site/
 .DS_Store
-/embrasure
-node_modules/
-.env
-*.log
-yarn.*
-package-lock.json

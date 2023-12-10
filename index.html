@@ -1,7 +1,197 @@
 <!DOCTYPE html>
+<!--
+Solid State by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Starfield by Slawomir Chodnicki https://medium.com/better-programming/fun-with-html-canvas-lets-create-a-star-field-a46b0fed5002
+-->
 <html>
-  <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+  <head>
+    <title>Chase Sobey</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+    <meta
+      name="image"
+      property="og:image"
+      content="assets/images/other/thumbnail.png"
+    />
+  </head>
+  <body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <h1><a href="#">Chase</a></h1>
+        <ul class="icons" id="icons">
+          <li>
+            <a
+              href="assets/files/Chase_Sobey_Resume.pdf"
+              class="icon solid fa-file"
+              ><span class="label">Resume</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/chase-sobey/"
+              class="icon brands fa-linkedin"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:chase.sobey.work@gmail.com"
+              class="icon solid fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/ChaseSobey"
+              class="icon brands fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+        </ul>
+      </header>
+      <canvas id="canvas"></canvas>
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <span class="image medium" id="headshot"
+            ><img src="images/Chase_Site.jpg" alt=""
+          /></span>
+          <h2>Chase Sobey</h2>
+          <p>
+            I am a former structural engineer turned software engineer based in
+            San Francisco, California. I am experienced in JavaScript, Python,
+            React, AWS Cloud Architecting, SQL and noSQL. Endlessly curious
+            about emerging technologies and always seeking a new challenging
+            project!
+          </p>
+        </div>
+      </section>
+
+      <!-- Wrapper -->
+      <section id="wrapper">
+        <!-- One -->
+        <section id="one" class="wrapper spotlight style1">
+          <div class="inner">
+            <a href="https://embrasure-secrets.github.io/" class="image"
+              ><img src="images/Transparent_Embrasure.png" alt=""
+            /></a>
+            <div class="content">
+              <h2 class="major">Embrasure Secrets</h2>
+              <p>
+                Embrasure is an open-source, centralized secrets manager that
+                protects your application secrets through a combination of
+                encryption, access control, and injection-at-runtime. Built
+                using Node.js and Amazon Web Services, it is easy to set up and
+                integrate with your Node applications.
+              </p>
+              <p>
+                For the developer, Embrasure provides a CLI to abstract away the
+                pain of using a secrets manager. Furthermore, Embrasure injects
+                secrets at runtime and redacts secrets from getting logged on
+                stdOut and StdErr.
+              </p>
+              <a href="https://embrasure-secrets.github.io/" class="button"
+                >Read The Case Study</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Two -->
+      <section id="two" class="wrapper alt spotlight style2">
+        <div class="inner">
+          <span class="image"><img src="images/pluginIcon.png" alt="" /></span>
+          <div class="content">
+            <h2 class="major">Request Bin Ultra</h2>
+            <p>
+              RequestBin-like Tool for organizing, collecting and debugging
+              webhooks (DO Droplet, Nginx, MongoDB, Node.js, Express, React).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Three -->
+      <section id="three" class="wrapper spotlight style3">
+        <div class="inner">
+          <span class="image"
+            ><img src="images/byte_buddy_thumbnail.PNG" alt=""
+          /></span>
+          <div class="content">
+            <h2 class="major">Byte Buddy</h2>
+            <p>
+              Personal Telegram messenger chatbot powered by Openai (Python,
+              Openai API).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Four -->
+      <section id="four" class="wrapper alt spotlight style4">
+        <div class="inner">
+          <span class="image"
+            ><img src="images/pocket_book_thumbnail.PNG" alt=""
+          /></span>
+          <div class="content">
+            <h2 class="major">Pocket Book</h2>
+            <p>
+              Book reading web application with built-in passage searching
+              functionality (ruby, html, css).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer">
+        <div class="inner">
+          <h2 class="major">Get in touch</h2>
+          <ul class="contact">
+            <li class="icon solid fa-key">
+              <a href="https://embrasure-secrets.github.io/"
+                >Embrasure Case Study</a
+              >
+            </li>
+            <li class="icon solid fa-envelope">
+              <a href="mailto:chase.sobey.work@gmail.com"
+                >chase.sobey.work@gmail.com</a
+              >
+            </li>
+            <li class="icon brands fa-linkedin">
+              <a href="https://www.linkedin.com/in/chase-sobey/">Linkedin</a>
+            </li>
+            <li class="icon solid fa-file">
+              <a href="assets/files/Chase_Sobey_Resume.pdf">Resume</a>
+            </li>
+          </ul>
+          <ul class="copyright">
+            <li>&copy; Chase Sobey All rights reserved.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/starfield.js"></script>
   </body>
 </html>
